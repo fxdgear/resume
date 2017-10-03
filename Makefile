@@ -17,3 +17,5 @@ html:  clean $(HTML)
 clean:
 	rm -f *.html *.pdf
 
+foo:
+	docker run -v $(PWD):/documents fxdgear/resume:latest make all
